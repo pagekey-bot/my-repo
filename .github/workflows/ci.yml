@@ -5,3 +5,6 @@ on: [push]
 jobs:
   version:
     uses: pagekey/semver/.github/workflows/semver.yml@main
+    with:
+      SEMVER_USER: pagekey-bot
+      SEMVER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
