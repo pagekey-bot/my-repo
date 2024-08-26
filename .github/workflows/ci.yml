@@ -1,0 +1,7 @@
+name: Run semantic version process.
+
+on: [push]
+
+jobs:
+  version:
+    uses: pagekey/semver/.github/workflows/semver.yml@main
